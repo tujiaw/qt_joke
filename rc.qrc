@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rc/smile.ico</file>
+    </qresource>
+</RCC>

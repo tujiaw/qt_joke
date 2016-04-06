@@ -14,7 +14,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Joke
 TEMPLATE = app
-
+RC_FILE = rc/joke.rc
 
 SOURCES += main.cpp\
         dialog.cpp \
@@ -32,3 +32,6 @@ HEADERS  += dialog.h \
     jokelistwidget.h \
 
 FORMS    += dialog.ui
+
+RESOURCES += \
+    rc.qrc

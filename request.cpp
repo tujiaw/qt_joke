@@ -62,7 +62,8 @@ QString JokeRequest::getUrl()
 
 void JokeRequest::setDate(const QDate &date)
 {
-    m_date = QString("%1-%2-%3").arg(date.year()).arg(date.month()).arg(date.day());
+    m_date = QString("%1-%2-%3").arg(date.year()-1).arg(date.month()).arg(date.day());
+    qDebug() << "date:" << m_date;
 }
 
 void JokeRequest::setPages(int pages)
